@@ -1,0 +1,21 @@
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+button.liked {
+    border-color: green;
+    background-color: #eaffea;
+    color: green;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,63 @@
+.white-green-navbar {
+  background-color: rgb(28, 24, 24);
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid black;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2ecc71 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 0.7rem;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2ecc71 !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2ecc71;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active underline */
+.navbar-nav .active-nav {
+  color: #2ecc71 !important;
+}
+
+.navbar-nav .active-nav::after {
+  width: 100%;
+}
+
+/* Responsive dropdown style */
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: black;
+    padding: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
