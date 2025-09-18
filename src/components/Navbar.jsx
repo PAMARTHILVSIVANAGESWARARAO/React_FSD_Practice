@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg white-green-navbar">
       <div className="container-fluid">
-        <a className="navbar-brand brand-name" href="#">Siva's Portfolio</a>
+        <a className="navbar-brand brand-name" href="#">Navbar</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -25,10 +25,10 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
-            {["home", "about", "projects", "skills", "contact"].map((item) => (
+            {["App","Car","Button","Text","Image","Raju"].map((item) => (
               <li className="nav-item" key={item}>
                 <a
-                  href={`#${item}`}
+                  href={`/${item}`}
                   className={`nav-link nav-item-custom ${activeLink === item ? "active-nav" : ""}`}
                   onClick={() => handleSetActive(item)}
                 >

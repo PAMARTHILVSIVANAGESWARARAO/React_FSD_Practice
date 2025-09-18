@@ -1,0 +1,11 @@
+.raju-container{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.raju-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+}

@@ -1,25 +1,13 @@
+import './App.css';
 
-import './App.css'
+import React from 'react';
 
 function App() {
-  
   return (
-    <>
-      
-      <h1>Hello </h1>
-      <h1>Login</h1>
-      <form>
-        <label htmlFor="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-        
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-        
-        <button type="submit">Login</button>
-      </form>
-      
-    </>
-  )
+    <div className="parent">
+      <h1>Hello World</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
